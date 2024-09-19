@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Carousel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="product-container">
+        <!-- Carousel Section -->
+        <div class="carousel">
+            <div class="main-image">
+                <img id="mainImage" src="https://via.placeholder.com/600x400" alt="Main Product Image">
+            </div>
+            <div class="thumbnails" id="thumbnails">
+                <img src="" alt="Thumbnail">
+            </div>
+            <button id="prev" class="carousel-control prev">←</button>
+            <button id="next" class="carousel-control next">→</button>
+        </div>
+
+        <!-- Product Information Section -->
+        <div class="product-info">
+            <h2 class="product-title">Apple MacBook AIR Apple M2 - (8 GB/512 GB SSD/Mac OS Monterey)</h2>
+            <div class="rating-review">
+                <span class="rating">★★★★☆</span>
+                <span class="reviews">(120 Reviews)</span>
+            </div>
+            <div class="price-section">
+                <p class="discount-price">₹39,990</p>
+                <p class="original-price">₹58,990</p>
+                <p class="discount">-32%</p>
+            </div>
+            <div class="description">
+                <h4>About this item</h4>
+                <ul>
+                    <li>Stylish & Portable Thin and Light Laptop</li>
+                    <li>13.6 Inch Liquid Retina display with IPS technology, 500 nits brightness</li>
+                    <li>Wide color (P3), True Tone technology</li>
+                    <li>Light Laptop without Optical Disk Drive</li>
+                </ul>
+            </div>
+
+            <label for="productVariants">Choose a variant:</label>
+            <select id="productVariants">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <div>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1" max="10">
+            </div>
+
+            <button id="addToCart">Add to Cart</button>
+            <p id="confirmationMessage" style="display:none;">Added to Cart!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
